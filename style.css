@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define the Bold weight */
+@font-face {
+    font-family: "Inter";
+    src: url("Inter-Bold.ttf") format("truetype");
+    font-weight: 800; /* Example weight for ExtraBold */
+}
+
+/* Define the SemiBold weight */
+@font-face {
+    font-family: "Inter";
+    src: url("Inter-SemiBold.ttf") format("truetype");
+    font-weight: 600; /* Example weight for SemiBold */
+}
+
+body {
+    font-family: "Inter-Bold", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: rgb(30, 60, 120);
+    background-image: url("/assets/images/Jean Gray painting.jpg"); /* The image used */
+      background-color: #cccccc; /* Used if the image is unavailable */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+      backdrop-filter: blur(50px);
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto; /* Adjust as necessary */
+}
+
+/* Profile pic */
+.profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: rgb(30, 60, 120);
+}
+
+.location {
+    color: rgb(50, 180, 50);
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 0.9em;
+    margin-bottom: 30px;
+     color: rgb(30, 60, 120);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    background-color: rgb(30, 60, 120);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover, .btn:focus {
+    background-color: white;
+    color: rgb(50, 180, 50);
+}
+
+.btn:focus {
+    outline-offset: 2px;
+}
+
+.attribution { 
+  font-size: 0.75em; 
+  text-align: center; 
+  color: rgb(30, 60, 120);
+}
+ 
+.attribution a { 
+  color: hsl(228, 45%, 60%); 
+  text-decoration: none;
+ }
+
+.attribution a:hover {
+    outline: none;
+    border: none;
+    
+}
+
+footer {
+    margin-top: auto;
+    padding-top: 20px;
+}
